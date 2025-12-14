@@ -1,0 +1,17 @@
+.logo-image img{
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.intro-btn{
+    border: 1px inset var(--secondary-color);
+    width: 150px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.nav-item.active, .nav-item:hover{
+    color:var(--secondary-color);
+}

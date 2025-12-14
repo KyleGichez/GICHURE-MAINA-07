@@ -1,0 +1,81 @@
+.strong{
+    color:var(--secondary-color);
+}
+
+.call-to-action{
+    padding:10px 15px;
+    border:1px inset var(--secondary-color);
+    border-radius:30px;
+    width:max-content;
+}
+
+.call-to-action:hover{
+    background:var(--secondary-color);
+    color:var(--background-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icon{
+    color:var(--secondary-color);
+    border: 1px inset var(--secondary-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.icon:hover{
+    color: var(--background-color);
+    border: 1px solid var(--background-color);
+    background-color: var(--secondary-color);
+    transition: all .3s ease-in-out;
+}
+
+.animated-text{
+    position:relative;
+    margin-left: 20px;
+}
+
+.animated-text::before{
+    content:'Software Engineer';
+    color: var(--secondary-color);
+    font-weight: 600;
+    animation: words 20s infinite;
+}
+
+.animated-text::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    border-left: 2px solid var(--secondary-color);
+    right: -8px;
+    animation: cursor 1s steps(1, end) infinite, typing 30s steps(14, end) infinite;
+}
+
+@keyframes cursor{
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: var(--secondary-color);
+    }
+    100%{
+        border-color: transparent;
+    }
+}
+
+@keyframes words{
+    0%, 100%{
+        content:'Software Engineer';
+    }
+}
+
+@keyframes typing{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 8px);
+    }
+}
