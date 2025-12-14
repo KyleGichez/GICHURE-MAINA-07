@@ -1,9 +1,19 @@
 import React from "react";
+import { useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Profile from "../images/profile3.png";
 import "../styles/Home.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Home = () => {
+
+   useEffect(() => {
+           Aos.init({
+             duration: 2000
+           });
+         }, []);
+
   return (
     <section
       id="home"
@@ -48,7 +58,7 @@ const Home = () => {
         </button>
       </div>
       <div className="image-wrapper w-[600px]">
-        <img src={Profile} alt="profile_image" />
+        <img src={Profile} alt="profile_image"/>
       </div>
     </section>
   );

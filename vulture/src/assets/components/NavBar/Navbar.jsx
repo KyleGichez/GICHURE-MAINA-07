@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <ul className="nav-items uppercase flex gap-[35px]">
                 <li className="nav-item active">
-                    <a href="#">home</a>
+                    <a href="#home">home</a>
                 </li>
                 <li className="nav-item">
                     <a href="#about">about</a>
