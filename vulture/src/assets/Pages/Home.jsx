@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex items-center justify-between px-20 pt-[100px]"
+      className="home-section flex items-center justify-between px-20 pt-[100px]"
     >
       <div className="intro-wrapper">
         <button className="intro-btn">GICHEZ D MAN</button>

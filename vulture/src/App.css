@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --background-color:#0A0A0F;
+  --background-color:#04041d;
   --text-color: #F4F4F5;
   --primary-color: #8B5CF6; /*buttons, links, highlights*/
   --secondary-color: #22D3EE;/*small elements, hover effects*/
