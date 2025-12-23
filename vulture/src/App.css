@@ -18,3 +18,7 @@ body {
   letter-spacing: 1px;
   line-height: auto;
 }
+
+html{
+  scroll-behaviour: smooth;
+}

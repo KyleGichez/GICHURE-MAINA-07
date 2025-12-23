@@ -4,7 +4,7 @@ import '../../styles/navbar.css';
 
 const Navbar = () => {
   return (
-    <div className='navbar-container px-20 py-4'>
+    <div className='navbar-container px-20 py-4 w-full fixed'>
         <div className="navbar-wrapper flex justify-between items-center cursor-pointer">
             <div className="navbar-logo">
                 <div className="logo-image w-[50px] h-[50px]}">
@@ -16,7 +16,7 @@ const Navbar = () => {
                     <a href="#home">home</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#about">about</a>
+                    <a href="#about">about me</a>
                 </li>
                 <li className="nav-item">
                     <a href="#experience">work experience</a>
