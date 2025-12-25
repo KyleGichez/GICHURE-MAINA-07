@@ -1,0 +1,15 @@
+.experience-section{
+    background-image: url('../images/bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.job-tag{
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.company-role li{
+    list-style-type: circle;
+}

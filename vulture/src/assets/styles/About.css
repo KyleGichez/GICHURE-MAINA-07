@@ -3,3 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.stat-card{
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 20px 30px;
+}

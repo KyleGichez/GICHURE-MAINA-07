@@ -1,5 +1,6 @@
 .navbar-container{
     background-color: var(--background-color);
+    z-index: 100;
 }
 
 .logo-image img{
@@ -8,7 +9,7 @@
 }
 
 .intro-btn{
-    border: 1px inset var(--secondary-color);
+    border: 1px inset var(--border-color);
     width: 150px;
     padding: 5px 8px;
     border-radius: 5px;

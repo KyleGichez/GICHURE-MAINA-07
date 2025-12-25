@@ -5,6 +5,7 @@ import ProfileA from "../images/profile2.png";
 import ProfileB from "../images/profile3.png";
 import "../styles/Home.css";
 import "../styles/About.css";
+import "../styles/Experience.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +22,7 @@ const Home = () => {
       {/* Home Section */}
       <section
         id="home"
-        className="home-section flex items-center justify-between px-20 pt-[100px] h-[100vh]"
+        className="home-section flex items-center justify-between px-20 py-[100px]"
       >
         <div className="intro-wrapper">
           <button className="intro-btn">GICHEZ D MAN</button>
@@ -68,7 +69,7 @@ const Home = () => {
       </section>
       
       {/* About Section */}
-      <section id="about" className="about-section pt-[100px] h-[100vh] px-20">
+      <section id="about" className="about-section py-[100px] px-20">
         <h1 className="text-3xl text-center uppercase" data-aos='zoom-in'>About Me</h1>
         <div className="about-wrapper">
           <div className="about-me-wrapper flex justify-between items-center gap-[25px] mb-2">
@@ -77,7 +78,7 @@ const Home = () => {
             </div>
             <div className="about-me-text" data-aos='fade-up'>
               <p>
-                - With over 4 years of experience in the software engineering
+                - With over 5 years of experience in the software engineering
                 industry, I have contributed largely to the E-commerce sector
                 through building web applications which enables the sellers to
                 sell their preffered products online to potential customers.
@@ -91,13 +92,99 @@ const Home = () => {
                 that engages with my tutorials regularly and this is also one of
                 the jobs I do; <span className="strong">Coding Tutor</span>.
               </p>
-              <div className='stat-cards'>
-                <div></div>
+              <br/>
+              <div className='stat-cards flex justify-between mt-[20px]'>
+                <div className='stat-card text-center'>
+                  <p className='text-xl bold pb-2'> 10 + </p>
+                  <p>Coding Certifications </p>
+                </div>
+                <div className='stat-card text-center'>
+                  <p className='text-xl bold pb-2'>5 + </p>
+                  <p> Years Of Experience </p>
+                </div>
+                <div className='stat-card text-center'>
+                  <p className='text-xl bold pb-2'>1000 + </p>
+                  <p> Tiktok Audience </p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="key-technologies">
-            <h3 className=''>Key Technologies I Use:</h3>
+          <div className='my-education mb-[10px]' data-aos='fade-up'>
+            <h2 className='text-2xl bold mb-[20px] uppercase flex items-center gap-[10px]'><span><Icon icon="tdesign:education-filled" width="24" height="24" /></span>Education</h2>
+              <div className='education-wrapper'>
+                <div className='university-education flex gap-[350px] mb-[20px]'>
+                  <div>
+                    <p className='mb-[10px]'>The Cooperative University Of Kenya</p>
+                    <p className='mb-[20px]'>Bachelor Of Science In Information Technology</p>
+                  </div>
+                  <div>
+                    <p className='mb-[10px]'>2019 - 2023</p>
+                    <p className='mb-[20px]'>Full Time</p>
+                  </div>
+                </div>
+                <div className='secondary-education flex gap-[400px] mb-[20px]'>
+                  <div>
+                    <p className='mb-[10px]'>Nyandarua High School</p>
+                    <p className='mb-[20px]'>Kenya Certificate Of Secondary Education</p>
+                  </div>
+                  <div>
+                    <p className='mb-[10px]'>2015 - 2018</p>
+                    <p className='mb-[20px]'>Full Time</p>
+                  </div>
+                </div>
+                <div className='primary-education flex gap-[420px] mb-[20px]' >
+                  <div>
+                    <p className='mb-[10px]'>Roots Academy</p>
+                    <p className='mb-[20px]'>Kenya Certificate Of Primary Education</p>
+                  </div>
+                  <div>
+                    <p className='mb-[10px]'>2007 - 2014</p>
+                    <p className='mb-[20px]'>Full Time</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          {/* <div className="key-technologies">
+            <h3 className='text-xl bold'>Key Technologies I Use</h3>
+            <div className='tech-cards'>
+              <div>React.js</div>
+              <div>Html5</div>
+              <div>Css</div>
+              <div>Tailwind Css</div>
+            </div>
+          </div> */}
+        </div>
+      </section>
+
+      {/* Work Experience Section */}
+      <section id='experience' className='experience-section py-[100px] px-20 h-[100vh]'>
+        <h1 className='text-3xl text-center uppercase mb-[100px]' data-aos='zoom-in'>Work Experience</h1>
+        <div className='experience-wrapper'>
+          <div className='job-experience flex gap-[50px]' data-aos='fade-up'>
+            <div className='company-name w-[500px]'>
+              <h3 className='text-xl bold uppercase mb-[20px]'>Samis Software Limited</h3>
+              <p className='mb-[20px]'>Nakuru, Kenya</p>
+              <p className='mb-[20px]'>Nov 2023 - Aug 2024</p>
+              <p className='job-tag w-[150px] px-3 py-2 text-center'>Full Time</p>
+            </div>
+            <div className='company-department'>
+              <h3 className='text-xl bold uppercase mb-[20px]'>Software Developer</h3>
+              <ul className='company-role'>
+                <li className='mb-[10px]'>Develop and maintain responsive user-friendly interfaces using React.js,
+                  ensuring seamless user experiences across multiple devices.
+                </li>
+                <li className='mb-[10px]'>Collaborate with Product manager, Backend developers, and UI/UX designers to implement new features
+                  and enhance existing ones.
+                </li>
+                <li className='mb-[10px]'>Optimize web applications for maximum speed and scalability, contributing to improved perfomance
+                  and user satisfaction.
+                </li>
+                <li className='mb-[10px]'>Deploy live web applications to the cloud architecture for hosting services and Domain Naming System
+                  on the company's web server.
+                </li>
+                <li className='mb-[10px]'>Participate in code reviews and provide feedback to enhance code quality and maintainability.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
