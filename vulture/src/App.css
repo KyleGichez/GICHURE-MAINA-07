@@ -12,6 +12,10 @@
   --border-color: #45d5ecff;
 }
 
+html {
+  scroll-behaviour: smooth;
+}
+
 body {
   background: var(--background-color);
   color: var(--text-color);
@@ -20,6 +24,3 @@ body {
   line-height: auto;
 }
 
-html{
-  scroll-behaviour: smooth;
-}
