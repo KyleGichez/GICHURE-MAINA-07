@@ -1,6 +1,7 @@
-import React from 'react'
-import Logo from '../../images/icon512.png'
+import React from 'react';
+import Logo from '../../images/icon512.png';
 import '../../styles/navbar.css';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
@@ -12,20 +13,17 @@ const Navbar = () => {
                 </div>
             </div>
             <ul className="nav-items uppercase flex gap-[35px]">
-                <li className="nav-item active">
-                    <a href="#home">home</a>
+                <li className="nav-item">
+                    <Link activeClass='nav-item-active' to='home' spy={true} smooth={true} offset={-50}>home</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#about">about me</a>
+                    <Link activeClass='nav-item-active' to='about' spy={true} smooth={true} offset={-50}>about me</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#experience">work experience</a>
+                    <Link activeClass='nav-item-active' to='experience' spy={true} smooth={true} offset={-50}>work experience</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#projects">projects</a>
-                </li>
-                <li className="nav-item">
-                    <a href="#contact">contact</a>
+                    <Link activeClass='nav-item-active' to='contact' spy={true} smooth={true} offset={-50}>contact</Link>
                 </li>
             </ul>
         </div>

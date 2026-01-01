@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import Navbar from '../components/NavBar/Navbar';
 import { Icon } from "@iconify/react";
 import ProfileA from "../images/profile2.png";
 import ProfileB from "../images/profile3.png";
@@ -10,6 +11,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
+
+  // Animation On Scroll Effect
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -19,11 +22,11 @@ const Home = () => {
 
   return (
     <>
+      {/* Navbar Component */}
+      <Navbar/>
+
       {/* Home Section */}
-      <section
-        id="home"
-        className="home-section flex items-center justify-between px-20 py-[100px]"
-      >
+      <section id="home" className="home-section flex items-center justify-between px-20 py-[100px]">
         <div className="intro-wrapper">
           <button className="intro-btn">GICHEZ D MAN</button>
           <h1 className="text-3xl mb-2">
@@ -66,7 +69,7 @@ const Home = () => {
         <div className="image-wrapper w-[700px]">
           <img src={ProfileA} alt="profile_imageA" />
         </div>
-      </section>
+      </section> 
 
       {/* About Section */}
       <section id="about" className="about-section py-[100px] px-20">
@@ -219,12 +222,9 @@ const Home = () => {
       </section>
 
       {/* Work Experience Section */}
-      <section
-        id="experience"
-        className="experience-section py-[100px] px-20 h-[100vh]"
-      >
+      <section id="experience" className="experience-section py-[100px] px-20 h-[100vh]">
         <h1
-          className="text-3xl uppercase mb-[100px] flex items-center gap-[10px] justify-center"
+         className="text-3xl uppercase mb-[100px] flex items-center gap-[10px] justify-center"
           data-aos="zoom-in"
         >
           <span>
