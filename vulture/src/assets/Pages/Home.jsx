@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import Navbar from '../components/NavBar/Navbar';
+import Navbar from "../components/NavBar/Navbar";
 import { Icon } from "@iconify/react";
 import ProfileA from "../images/profile2.png";
 import ProfileB from "../images/profile3.png";
@@ -11,7 +11,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
-
   // Animation On Scroll Effect
   useEffect(() => {
     Aos.init({
@@ -23,10 +22,13 @@ const Home = () => {
   return (
     <>
       {/* Navbar Component */}
-      <Navbar/>
+      <Navbar />
 
       {/* Home Section */}
-      <section id="home" className="home-section flex items-center justify-between px-20 py-[100px]">
+      <section
+        id="home"
+        className="home-section flex items-center justify-between px-20 py-[100px]"
+      >
         <div className="intro-wrapper">
           <button className="intro-btn">GICHEZ D MAN</button>
           <h1 className="text-3xl mb-2">
@@ -69,7 +71,7 @@ const Home = () => {
         <div className="image-wrapper w-[700px]">
           <img src={ProfileA} alt="profile_imageA" />
         </div>
-      </section> 
+      </section>
 
       {/* About Section */}
       <section id="about" className="about-section py-[100px] px-20">
@@ -132,7 +134,7 @@ const Home = () => {
               Education
             </h2>
             <div className="education-wrapper">
-              <div className="university-education flex gap-[350px] mb-[20px]">
+              <div className="university-education flex justify-between mb-[20px]">
                 <div>
                   <p className="mb-[10px] flex items-center gap-[10px]">
                     <span>
@@ -160,7 +162,7 @@ const Home = () => {
                   <p className="mb-[20px]">Full Time</p>
                 </div>
               </div>
-              <div className="secondary-education flex gap-[400px] mb-[20px]">
+              <div className="secondary-education flex justify-between mb-[20px]">
                 <div>
                   <p className="mb-[10px] flex items-center gap-[10px]">
                     <span>
@@ -188,7 +190,7 @@ const Home = () => {
                   <p className="mb-[20px]">Full Time</p>
                 </div>
               </div>
-              <div className="primary-education flex gap-[420px] mb-[20px]">
+              <div className="primary-education flex justify-between mb-[20px]">
                 <div>
                   <p className="mb-[10px] flex items-center gap-[10px]">
                     <span>
@@ -222,9 +224,9 @@ const Home = () => {
       </section>
 
       {/* Work Experience Section */}
-      <section id="experience" className="experience-section py-[100px] px-20 h-[100vh]">
+      <section id="experience" className="experience-section py-[100px] px-20">
         <h1
-         className="text-3xl uppercase mb-[100px] flex items-center gap-[10px] justify-center"
+          className="text-3xl uppercase mb-[100px] flex items-center gap-[10px] justify-center"
           data-aos="zoom-in"
         >
           <span>
@@ -233,7 +235,10 @@ const Home = () => {
           Work Experience
         </h1>
         <div className="experience-wrapper">
-          <div className="job-experience flex gap-[50px]" data-aos="fade-up">
+          <div
+            className="job-experience flex justify-between gap-[50px] mb-[30px]"
+            data-aos="fade-up"
+          >
             <div className="company-name w-[500px]">
               <h3 className="text-xl bold uppercase mb-[20px] flex gap-[10px]">
                 <span>
@@ -270,7 +275,7 @@ const Home = () => {
             </div>
             <div className="company-department">
               <h3 className="text-xl bold uppercase mb-[20px]">
-                Software Developer
+                Software Engineer
               </h3>
               <ul className="company-role">
                 <li className="mb-[10px]">
@@ -296,6 +301,76 @@ const Home = () => {
                   code quality and maintainability.
                 </li>
               </ul>
+            </div>
+          </div>
+          <div className="tutorials-wrapper" data-aos="fade-up">
+            <h2 className="text-2xl uppercase flex items-center gap-[10px] mb-[20px]">
+              <span>
+                <Icon icon="entypo:laptop" width="24" height="24" />
+              </span>
+              Coding Tutorials
+            </h2>
+            <div className="tutorials-content flex justify-between gap-[10px]">
+              <div className="coding-tutorial">
+                <div className="youtube-video">
+                  <iframe
+                    width=""
+                    height=""
+                    src="https://www.youtube.com/embed/2R7oc1L4i-k?si=7yqFd_6UsNuskesp"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                  <p>How Different HTML Elements Display On The Web Browser</p>
+                </div>
+              </div>
+              <div className="coding-tutorial">
+                <div className="youtube-video">
+                  <iframe
+                    width=""
+                    height=""
+                    src="https://www.youtube.com/embed/czANALfb0SU?si=UeQ4Np-3KymhAerD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                  <p>Introduction To Software Development</p>
+                </div>
+              </div>
+              <div className="coding-tutorial">
+                <div className="youtube-video">
+                  <iframe
+                    width=""
+                    height=""
+                    src="https://www.youtube.com/embed/cFU2fkAX0RY?si=WcvkXeA6SPCk0jLg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                  <p>Introduction to HTML5 For The Web</p>
+                </div>
+              </div>
+              <div className="coding-tutorial">
+                <div className="youtube-video">
+                  <iframe
+                    width=""
+                    height=""
+                    src="https://www.youtube.com/embed/czANALfb0SU?si=UeQ4Np-3KymhAerD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                  <p>Frontend Vs Backend Software Development</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
