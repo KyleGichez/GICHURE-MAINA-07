@@ -22,6 +22,9 @@ const Navbar = () => {
                 <li className="nav-item">
                     <Link activeClass='nav-item-active' to='experience' spy={true} smooth={true} offset={-50}>work experience</Link>
                 </li>
+                {/* <li className="nav-item">
+                    <Link activeClass='nav-item-active' to='projects' spy={true} smooth={true} offset={-50}>projects</Link>
+                </li> */}
                 <li className="nav-item">
                     <Link activeClass='nav-item-active' to='contact' spy={true} smooth={true} offset={-50}>contact</Link>
                 </li>

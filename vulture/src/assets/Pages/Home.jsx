@@ -119,7 +119,7 @@ const Home = () => {
                 </div>
                 <div className="stat-card text-center">
                   <p className="text-xl bold pb-2">1000 + </p>
-                  <p> Live Audience </p>
+                  <p> TikTok Audience </p>
                 </div>
               </div>
             </div>
