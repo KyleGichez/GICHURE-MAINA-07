@@ -1,0 +1,37 @@
+.contact-section{
+    height: 120vh;
+    background-image: url('../images/bg1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-input input{
+    border: 1px solid #ffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+.form-text-area textarea{
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: var(--background-color);
+}
+
+.submit-btn button{
+    width: 400px;
+    background-color: var(--background-color);
+    border: 1px solid #ffff;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.submit-btn button:hover{
+    /* background-color: var(--secondary-color); */
+    /* color: var(--background-color); */
+    border: 1px solid var(--secondary-color);
+    transition: all .3s ease-in-out;
+}

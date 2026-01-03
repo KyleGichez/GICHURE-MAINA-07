@@ -7,6 +7,7 @@ import ProfileB from "../images/profile3.png";
 import "../styles/Home.css";
 import "../styles/About.css";
 import "../styles/Experience.css";
+import "../styles/Contact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -303,7 +304,7 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="tutorials-wrapper" data-aos="fade-up">
+          <div className="tutorials-wrapper mb-[30px]" data-aos="fade-up">
             <h2 className="text-2xl uppercase flex items-center gap-[10px] mb-[20px]">
               <span>
                 <Icon icon="entypo:laptop" width="24" height="24" />
@@ -375,6 +376,66 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="contact-section py-[100px] px-20">
+        <h1
+          className="text-3xl uppercase mb-[100px] flex items-center gap-[10px] justify-center"
+          data-aos="zoom-in"
+        >
+          <span>
+            <Icon icon="heroicons:phone-20-solid" width="48" height="48" />
+          </span>
+          Contact Me
+        </h1>
+        <div className="contact-form" data-aos='fade-up'>
+          <form action={""} method="POST" className="flex flex-col gap-[20px]">
+            <legend className='text-xl bold uppercase'>Get In Touch: </legend>
+            <div className="flex gap-[20px]">
+              <div className="form-input flex flex-col gap-[10px] w-[100%] mb-[10px]">
+                <label htmlFor="Fname">First Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter Your First Name"
+                  required
+                />
+              </div>
+              <div className="form-input flex flex-col gap-[10px] w-[100%] mb-[10px]">
+                <label htmlFor="Lname">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter Your Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-input flex flex-col gap-[10px] w-[100%] mb-[10px]">
+              <label htmlFor="Lname">Email Address</label>
+              <input type="email" placeholder="Enter your email address" required />
+            </div>
+            <div className="form-text-area flex flex-col gap-[10px] mb-[20px]">
+              <label htmlFor="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="33"
+                placeholder="Write your text message here!"
+              ></textarea>
+            </div>
+            <div className="submit-btn flex justify-center">
+              <button type="button"> Submit </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className='footer flex justify-between px-20 py-[20px]'>
+        <p>Coding Is Art.</p>
+        <p>Copyright &copy; 2025</p>
+        <p>Developed by Gichure Maina.</p>
+      </footer>
     </>
   );
 };
