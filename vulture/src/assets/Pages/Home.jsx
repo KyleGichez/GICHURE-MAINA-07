@@ -2,11 +2,12 @@ import React from "react";
 import { useEffect } from "react";
 import Navbar from "../components/NavBar/Navbar";
 import { Icon } from "@iconify/react";
-import ProfileA from "../images/profile2.png";
+import ProfileA from "../images/Profile.png";
 import ProfileB from "../images/profile3.png";
 import "../styles/Home.css";
 import "../styles/About.css";
 import "../styles/Experience.css";
+import "../styles/Projects.css";
 import "../styles/Contact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -51,16 +52,16 @@ const Home = () => {
             solve is a step closer to turning imagination into reality.
           </p>
           <div className="social-media-icons flex gap-[25px] mt-[20px] mb-[20px]">
-            <a href="/instagram" className="icon">
+            <a href="https://www.instagram.com" className="icon">
               <Icon icon="mdi:instagram" width={30} height={30} />
             </a>
-            <a href="/facebook" className="icon">
-              <Icon icon="mdi:facebook" width={30} height={30} />
+            <a href="https://www.youtube.com/@gichezdman" className="icon">
+              <Icon icon="mdi:youtube" width={30} height={30} />
             </a>
-            <a href="/twitter" className="icon">
-              <Icon icon="mdi:twitter" width={30} height={30} />
+            <a href="https://www.linkedin.com/in/gichure-maina-a45aab202/" className="icon">
+              <Icon icon="mdi:linkedin" width={30} height={30} />
             </a>
-            <a href="/github" className="icon">
+            <a href="https://github.com/KyleGichez" className="icon">
               <Icon icon="mdi:github" width={30} height={30} />
             </a>
           </div>
@@ -70,7 +71,7 @@ const Home = () => {
           </button>
         </div>
         <div className="image-wrapper w-[700px]">
-          <img src={ProfileA} alt="profile_imageA" />
+          <img src={ProfileA} alt="profile_imageA" className="w-[100%] h-[auto]" />
         </div>
       </section>
 
@@ -91,7 +92,7 @@ const Home = () => {
               className="about-me-image w-[1500px] px-[5px]"
               data-aos="fade-right"
             >
-              <img src={ProfileB} alt="profile_imageB" />
+              <img src={ProfileB} alt="profile_imageB" className="w-[100%] h-[auto]" />
             </div>
             <div className="about-me-text" data-aos="fade-up">
               <p>
@@ -241,7 +242,7 @@ const Home = () => {
             data-aos="fade-up"
           >
             <div className="company-name w-[500px]">
-              <h3 className="text-xl bold uppercase mb-[20px] flex gap-[10px]">
+              <h2 className="text-xl bold uppercase mb-[20px] flex gap-[10px]">
                 <span>
                   <Icon
                     icon="material-symbols-light:home-work-rounded"
@@ -250,7 +251,7 @@ const Home = () => {
                   />
                 </span>
                 Samis Software Limited
-              </h3>
+              </h2>
               <p className="mb-[20px] flex gap-[10px]">
                 <span>
                   <Icon icon="healthicons:social-work" width="24" height="24" />
@@ -275,9 +276,9 @@ const Home = () => {
               </p>
             </div>
             <div className="company-department">
-              <h3 className="text-xl bold uppercase mb-[20px]">
+              <h2 className="text-xl bold uppercase mb-[20px]">
                 Software Engineer
-              </h3>
+              </h2>
               <ul className="company-role">
                 <li className="mb-[10px]">
                   Develop and maintain responsive user-friendly interfaces using
@@ -388,9 +389,9 @@ const Home = () => {
           </span>
           Contact Me
         </h1>
-        <div className="contact-form" data-aos='fade-up'>
+        <div className="contact-form" data-aos="fade-up">
           <form action={""} method="POST" className="flex flex-col gap-[20px]">
-            <legend className='text-xl bold uppercase'>Get In Touch: </legend>
+            <legend className="text-xl bold uppercase">Get In Touch: </legend>
             <div className="flex gap-[20px]">
               <div className="form-input flex flex-col gap-[10px] w-[100%] mb-[10px]">
                 <label htmlFor="Fname">First Name</label>
@@ -411,7 +412,11 @@ const Home = () => {
             </div>
             <div className="form-input flex flex-col gap-[10px] w-[100%] mb-[10px]">
               <label htmlFor="Lname">Email Address</label>
-              <input type="email" placeholder="Enter your email address" required />
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
             </div>
             <div className="form-text-area flex flex-col gap-[10px] mb-[20px]">
               <label htmlFor="message">Your Message</label>
@@ -431,9 +436,9 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className='footer flex justify-between px-20 py-[20px]'>
+      <footer className="footer flex justify-between px-20 py-[20px]" role="contentinfo">
         <p>Coding Is Art.</p>
-        <p>Copyright &copy; 2025</p>
+        <p>Copyright &copy; 2025 All Rights Reserved.</p>
         <p>Developed by Gichure Maina.</p>
       </footer>
     </>
