@@ -21,9 +21,7 @@
     height: 0;
 }
 
-youtube-video iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.youtube-video iframe{
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
 }

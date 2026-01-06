@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/NavBar/Navbar";
 import { Icon } from "@iconify/react";
 import ProfileA from "../images/Profile.png";
@@ -20,6 +20,11 @@ const Home = () => {
       easing: "ease-in-sine",
     });
   }, []);
+
+  // Set current year for footer
+  function getCurrentYear() {
+    return new Date().getFullYear();
+  }
 
   return (
     <>
@@ -133,7 +138,7 @@ const Home = () => {
               <span>
                 <Icon icon="tdesign:education-filled" width="24" height="24" />
               </span>
-              Education
+              Education Background
             </h2>
             <div className="education-wrapper">
               <div className="university-education flex justify-between mb-[20px]">
@@ -325,7 +330,7 @@ const Home = () => {
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
-                  <p>How Different HTML Elements Display On The Web Browser</p>
+                  <p className="pt-1">How Different HTML Elements Display On The Web Browser</p>
                 </div>
               </div>
               <div className="coding-tutorial">
@@ -340,7 +345,7 @@ const Home = () => {
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
-                  <p>Introduction To Software Development</p>
+                  <p className="pt-1">Introduction To Software Development</p>
                 </div>
               </div>
               <div className="coding-tutorial">
@@ -355,7 +360,7 @@ const Home = () => {
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
-                  <p>Introduction to HTML5 For The Web</p>
+                  <p className="pt-1">Introduction to HTML5 For The Web</p>
                 </div>
               </div>
               <div className="coding-tutorial">
@@ -370,7 +375,7 @@ const Home = () => {
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
-                  <p>Frontend Vs Backend Software Development</p>
+                  <p className="pt-1">Frontend Vs Backend Software Development</p>
                 </div>
               </div>
             </div>
@@ -438,7 +443,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="footer flex justify-between px-20 py-[20px]" role="contentinfo">
         <p>Coding Is Art.</p>
-        <p>Copyright &copy; 2025 All Rights Reserved.</p>
+        <p>Copyright &copy; <span>{getCurrentYear()}</span> All Rights Reserved.</p>
         <p>Developed by Gichure Maina.</p>
       </footer>
     </>
