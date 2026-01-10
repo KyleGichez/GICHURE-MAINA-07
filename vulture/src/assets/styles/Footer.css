@@ -1,0 +1,28 @@
+.social-media-icons-footer {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 20px 20px;
+  }
+
+  .social-media-icons-footer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icon{
+    color: #ffff;
+    border: 1px solid #ffff;
+  }
+}

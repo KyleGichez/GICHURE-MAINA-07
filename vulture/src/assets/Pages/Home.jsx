@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "../components/NavBar/Navbar";
 import { Icon } from "@iconify/react";
 import ProfileA from "../images/Profile.png";
@@ -7,8 +7,8 @@ import ProfileB from "../images/profile3.png";
 import "../styles/Home.css";
 import "../styles/About.css";
 import "../styles/Experience.css";
-import "../styles/Projects.css";
 import "../styles/Contact.css";
+import "../styles/Footer.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -42,7 +42,11 @@ const Home = () => {
             Hello, I'm{" "}
             <strong className="strong uppercase">Gichure Maina</strong>
           </h1>
-          <h2 className="text-2xl mb-2 flex">
+          <h2 className="mobile-view-h2 mb-2">
+            And I am a{" "}
+            <strong className="strong uppercase">Software Engineer</strong>
+          </h2>
+          <h2 className="desktop-view-h2 text-2xl mb-2 flex">
             And I am a <span className="animated-text"></span>
           </h2>
           <h3 className="text-xl mb-2">
@@ -57,16 +61,36 @@ const Home = () => {
             solve is a step closer to turning imagination into reality.
           </p>
           <div className="social-media-icons flex gap-[25px] mt-[20px] mb-[20px]">
-            <a href="https://www.instagram.com" className="icon">
+            <a
+              href="https://www.instagram.com"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="mdi:instagram" width={30} height={30} />
             </a>
-            <a href="https://www.youtube.com/@gichezdman" className="icon">
+            <a
+              href="https://www.youtube.com/@gichezdman"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="mdi:youtube" width={30} height={30} />
             </a>
-            <a href="https://www.linkedin.com/in/gichure-maina-a45aab202/" className="icon">
+            <a
+              href="https://www.linkedin.com/in/gichure-maina-a45aab202/"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="mdi:linkedin" width={30} height={30} />
             </a>
-            <a href="https://github.com/KyleGichez" className="icon">
+            <a
+              href="https://github.com/KyleGichez"
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon icon="mdi:github" width={30} height={30} />
             </a>
           </div>
@@ -75,8 +99,12 @@ const Home = () => {
             <Icon icon="solar:arrow-right-linear" width="24" height="24" />
           </button>
         </div>
-        <div className="image-wrapper w-[700px]">
-          <img src={ProfileA} alt="profile_imageA" className="w-[100%] h-[auto]" />
+        <div className="image-wrapper w-[50vw]">
+          <img
+            src={ProfileA}
+            alt="profile_imageA"
+            className="w-[100%] h-[auto]"
+          />
         </div>
       </section>
 
@@ -94,13 +122,17 @@ const Home = () => {
         <div className="about-wrapper">
           <div className="about-me-wrapper flex justify-between items-center gap-[25px] mb-[20px]">
             <div
-              className="about-me-image w-[1500px] px-[5px]"
+              className="about-me-image w-full px-[5px]"
               data-aos="fade-right"
             >
-              <img src={ProfileB} alt="profile_imageB" className="w-[100%] h-[auto]" />
+              <img
+                src={ProfileB}
+                alt="profile_imageB"
+                className="w-[100%] h-[auto]"
+              />
             </div>
-            <div className="about-me-text" data-aos="fade-up">
-              <p>
+            <div className="about-me-text">
+              <p data-aos="fade-up">
                 With over 5 years of experience in the software engineering
                 industry, I have contributed largely to the E-commerce sector
                 through building web applications which enables the sellers to
@@ -109,7 +141,7 @@ const Home = () => {
                 seller hence driving more sales to the business.{" "}
               </p>
               <br />
-              <p>
+              <p data-aos="fade-up">
                 During my leisure time I create educative and impactful coding
                 content teaching web development. Through Youtube and Tiktok, I
                 have gathered an online audience that engages with my tutorials
@@ -118,32 +150,38 @@ const Home = () => {
               </p>
               <br />
               <div className="stat-cards flex justify-between mt-[20px]">
-                <div className="stat-card text-center">
+                <div className="stat-card text-center" data-aos="fade-up">
                   <p className="text-xl bold pb-2"> 10 + </p>
                   <p>Coding Certifications </p>
                 </div>
-                <div className="stat-card text-center">
+                <div className="stat-card text-center" data-aos="fade-up">
                   <p className="text-xl bold pb-2">5 + </p>
                   <p> Years Of Experience </p>
                 </div>
-                <div className="stat-card text-center">
+                <div className="stat-card text-center" data-aos="fade-up">
                   <p className="text-xl bold pb-2">1000 + </p>
                   <p> TikTok Audience </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="my-education mb-[10px]" data-aos="fade-up">
-            <h2 className="text-2xl bold mb-[20px] uppercase flex items-center gap-[10px]">
+          <div className="my-education mb-[10px]">
+            <h2
+              className="text-2xl bold mb-[20px] uppercase flex items-center gap-[10px]"
+              data-aos="fade-up"
+            >
               <span>
                 <Icon icon="tdesign:education-filled" width="24" height="24" />
               </span>
               Education Background
             </h2>
             <div className="education-wrapper">
-              <div className="university-education flex justify-between mb-[20px]">
+              <div
+                className="university-education flex justify-between mb-[20px]"
+                data-aos="fade-up"
+              >
                 <div>
-                  <p className="mb-[10px] flex items-center gap-[10px]">
+                  <p className="university mb-[10px] flex items-center gap-[10px]">
                     <span>
                       <Icon
                         icon="material-symbols-light:home-work-rounded"
@@ -153,7 +191,7 @@ const Home = () => {
                     </span>
                     The Co-operative University Of Kenya
                   </p>
-                  <p className="mb-[20px] flex items-center gap-[10px]">
+                  <p className="university mb-[10px] flex items-center gap-[10px]">
                     <span>
                       <Icon
                         icon="clarity:certificate-solid"
@@ -165,13 +203,34 @@ const Home = () => {
                   </p>
                 </div>
                 <div>
-                  <p className="mb-[10px]">2019 - 2023</p>
-                  <p className="mb-[20px]">Full Time</p>
+                  <p className="university mb-[10px] flex gap-[10px] items-center">
+                    <span className="mobile-icon-hide">
+                      <Icon
+                        icon="fluent-mdl2:calendar-work-week"
+                        width="20"
+                        height="20"
+                      />
+                    </span>
+                    2019 - 2023
+                  </p>
+                  <p className="university mb-[20px] flex gap-[10px] items-center">
+                    <span className="mobile-icon-hide">
+                      <Icon
+                        icon="tdesign:education-filled"
+                        width="24"
+                        height="24"
+                      />
+                    </span>
+                    Full Time
+                  </p>
                 </div>
               </div>
-              <div className="secondary-education flex justify-between mb-[20px]">
+              <div
+                className="secondary-education flex justify-between mb-[20px]"
+                data-aos="fade-up"
+              >
                 <div>
-                  <p className="mb-[10px] flex items-center gap-[10px]">
+                  <p className="secondary mb-[10px] flex items-center gap-[10px]">
                     <span>
                       <Icon
                         icon="material-symbols-light:home-work-rounded"
@@ -181,7 +240,7 @@ const Home = () => {
                     </span>
                     Nyandarua High School
                   </p>
-                  <p className="mb-[20px] flex items-center gap-[10px]">
+                  <p className="secondary mb-[10px] flex items-center gap-[10px]">
                     <span>
                       <Icon
                         icon="clarity:certificate-solid"
@@ -193,13 +252,34 @@ const Home = () => {
                   </p>
                 </div>
                 <div>
-                  <p className="mb-[10px]">2015 - 2018</p>
-                  <p className="mb-[20px]">Full Time</p>
+                  <p className="secondary mb-[10px] flex gap-[10px] items-center">
+                    <span className="mobile-icon-hide">
+                      <Icon
+                        icon="fluent-mdl2:calendar-work-week"
+                        width="20"
+                        height="20"
+                      />
+                    </span>
+                    2015 - 2018
+                  </p>
+                  <p className="secondary mb-[20px] flex gap-[10px] items-center">
+                    <span className="mobile-icon-hide">
+                      <Icon
+                        icon="tdesign:education-filled"
+                        width="24"
+                        height="24"
+                      />
+                    </span>
+                    Full Time
+                  </p>
                 </div>
               </div>
-              <div className="primary-education flex justify-between mb-[20px]">
+              <div
+                className="primary-education flex justify-between mb-[20px]"
+                data-aos="fade-up"
+              >
                 <div>
-                  <p className="mb-[10px] flex items-center gap-[10px]">
+                  <p className="primary mb-[10px] flex items-center gap-[10px]">
                     <span>
                       <Icon
                         icon="material-symbols-light:home-work-rounded"
@@ -209,7 +289,7 @@ const Home = () => {
                     </span>
                     Roots Academy
                   </p>
-                  <p className="mb-[20px] flex items-center gap-[10px]">
+                  <p className="primary mb-[10px] flex items-center gap-[10px]">
                     <span>
                       <Icon
                         icon="clarity:certificate-solid"
@@ -221,8 +301,26 @@ const Home = () => {
                   </p>
                 </div>
                 <div>
-                  <p className="mb-[10px]">2007 - 2014</p>
-                  <p className="mb-[20px]">Full Time</p>
+                  <p className="primary mb-[10px] flex gap-[10px] items-center">
+                    <span className="mobile-icon-hide">
+                      <Icon
+                        icon="fluent-mdl2:calendar-work-week"
+                        width="20"
+                        height="20"
+                      />
+                    </span>
+                    2007 - 2014
+                  </p>
+                  <p className="primary mb-[10px] flex gap-[10px] items-center">
+                    <span className="mobile-icon-hide">
+                      <Icon
+                        icon="tdesign:education-filled"
+                        width="24"
+                        height="24"
+                      />
+                    </span>
+                    Full Time
+                  </p>
                 </div>
               </div>
             </div>
@@ -330,7 +428,9 @@ const Home = () => {
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
-                  <p className="pt-1">How Different HTML Elements Display On The Web Browser</p>
+                  <p className="pt-1">
+                    How Different HTML Elements Display On The Web Browser
+                  </p>
                 </div>
               </div>
               <div className="coding-tutorial">
@@ -375,7 +475,9 @@ const Home = () => {
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
-                  <p className="pt-1">Frontend Vs Backend Software Development</p>
+                  <p className="pt-1">
+                    Frontend Vs Backend Software Development
+                  </p>
                 </div>
               </div>
             </div>
@@ -441,10 +543,65 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer flex justify-between px-20 py-[20px]" role="contentinfo">
-        <p>Coding Is Art.</p>
-        <p>Copyright &copy; <span>{getCurrentYear()}</span> All Rights Reserved.</p>
+      <footer
+        className="footer flex justify-between px-20 py-[20px]"
+        role="contentinfo"
+      >
         <p>Developed by Gichure Maina.</p>
+        <p>
+          Copyright &copy; <span>{getCurrentYear()}</span> All Rights Reserved.
+        </p>
+        <p>Coding Is Art.</p>
+        <div className="social-media-icons-footer flex gap-[25px] mt-[20px] mb-[20px]">
+          <div className="social-icon">
+            <span className="icon">
+              <Icon icon="mdi:instagram" width={30} height={30} />
+            </span>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </div>
+          <div className="social-icon">
+            <span className="icon">
+              <Icon icon="mdi:youtube" width={30} height={30} />
+            </span>
+            <a
+              href="https://www.youtube.com/@gichezdman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube
+            </a>
+          </div>
+          <div className="social-icon">
+            <span className="icon">
+              <Icon icon="mdi:linkedin" width={30} height={30} />
+            </span>
+            <a
+              href="https://www.linkedin.com/in/gichure-maina-a45aab202/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <div className="social-icon">
+            <span className="icon">
+              <Icon icon="mdi:github" width={30} height={30} />
+            </span>
+            <a
+              href="https://github.com/KyleGichez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </footer>
     </>
   );

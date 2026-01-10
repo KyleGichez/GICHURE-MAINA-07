@@ -1,87 +1,177 @@
-.home-section{
-    background-image: url('../images/bg.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
+.home-section {
+  min-height: 100vh;
+  background-image: url("../images/bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.strong{
-    color:var(--border-color);
+.strong {
+  color: var(--border-color);
 }
 
-.call-to-action{
-    padding:15px 20px;
-    border:1px solid var(--border-color);
-    border-radius:30px;
-    width:max-content;
+.call-to-action {
+  padding: 15px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  width: auto;
 }
 
-.call-to-action:hover{
-    background:var(--secondary-color);
-    color:var(--background-color);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+.call-to-action:hover {
+  background: var(--secondary-color);
+  color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.icon{
-    color:var(--border-color);
-    border: 1px solid var(--border-color);
-    border-radius: 50%;
-    padding: 10px;
+.icon {
+  color: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.icon:hover{
-    color: var(--background-color);
-    border: 1px solid var(--background-color);
-    background-color: var(--secondary-color);
-    transition: all .3s ease-in-out;
+.icon:hover {
+  color: var(--background-color);
+  border: 1px solid var(--background-color);
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
 }
 
-.animated-text{
-    position:relative;
-    margin-left: 20px;
+.animated-text {
+  position: relative;
+  margin-left: 20px;
 }
 
-.animated-text::before{
-    content:'Software Engineer';
-    color: var(--secondary-color);
-    font-weight: 600;
-    animation: words 20s infinite;
+.animated-text::before {
+  content: "Software Engineer";
+  color: var(--secondary-color);
+  font-weight: 600;
+  animation: words 20s infinite;
 }
 
-.animated-text::after{
-    content:'';
-    position: absolute;
+.animated-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: var(--background-color);
+  border-left: 2px solid var(--secondary-color);
+  right: -8px;
+  animation: cursor 1s steps(1, end) infinite,
+    typing 30s steps(14, end) infinite;
+}
+
+.mobile-view-h2 {
+  display: none;
+}
+
+@keyframes cursor {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--secondary-color);
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes words {
+  0%,
+  100% {
+    content: "Software Engineer";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
     width: 0;
-    height: 100%;
-    background-color: var(--background-color);
-    border-left: 2px solid var(--secondary-color);
-    right: -8px;
-    animation: cursor 1s steps(1, end) infinite, typing 30s steps(14, end) infinite;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
 }
 
-@keyframes cursor{
-    0%{
-        border-color: transparent;
-    }
-    50%{
-        border-color: var(--secondary-color);
-    }
-    100%{
-        border-color: transparent;
-    }
-}
+/* ---------- MOBILE (max-width: 768px) ---------- */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-@keyframes words{
-    0%, 100%{
-        content:'Software Engineer';
-    }
-}
+  section {
+    padding: 60px 20px !important;
+  }
 
-@keyframes typing{
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-        width: 0;
-    }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-        width: calc(100% + 8px);
-    }
+  h1,
+  h2,
+  h3 {
+    text-align: left !important;
+    font-size: larger;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .home-section {
+    flex-direction: column-reverse !important;
+    text-align: left !important;
+    padding: 40px 20px;
+  }
+
+  .intro-wrapper {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: fit-content;
+  }
+
+  .call-to-action {
+    width: auto;
+    display: none;
+  }
+
+  .desktop-view-h2 {
+    display: none;
+  }
+
+  .mobile-view-h2 {
+    display: block;
+  }
+
+  .social-media-icons {
+    display: none;
+    margin-bottom: 10px;
+  }
 }
