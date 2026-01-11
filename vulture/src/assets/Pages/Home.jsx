@@ -4,6 +4,8 @@ import Navbar from "../components/NavBar/Navbar";
 import { Icon } from "@iconify/react";
 import ProfileA from "../images/Profile.png";
 import ProfileB from "../images/profile3.png";
+import ProfileC from "../images/cert1.jpeg";
+import ProfileD from "../images/cert2.png";
 import "../styles/Home.css";
 import "../styles/About.css";
 import "../styles/Experience.css";
@@ -322,6 +324,22 @@ const Home = () => {
                     Full Time
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="tech-accolades-wrapper" data-aos="fade-up">
+            <h2 className="text-2xl bold uppercase mb-[20px] mt-[30px] flex gap-[10px] items-center">
+              <span>
+                <Icon icon="tdesign:certificate-filled" width="24" height="24" />
+              </span>
+              Tech Accolades
+            </h2>
+            <div className="tech-accolades flex gap-[30px]">
+              <div className="tech-accolade" data-aos="fade-up">
+                <img src={ProfileC} alt="google_technical_certificate" />
+              </div>
+              <div className="tech-accolade" data-aos="fade-up">
+                <img src={ProfileD} alt="javascript_frontend_certificate" />
               </div>
             </div>
           </div>

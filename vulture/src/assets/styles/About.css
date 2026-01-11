@@ -1,32 +1,32 @@
-.about-section{
-    min-height: 150vh;
-    background-image: url('../images/bg1.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
+.about-section {
+  min-height: 150vh;
+  background-image: url("../images/bg1.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.stat-card{
-    /* background-color: rgba(2, 2, 6, 0.8); */
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    padding: 20px 30px;
+.stat-card {
+  /* background-color: rgba(2, 2, 6, 0.8); */
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 20px 30px;
 }
 
-.mobile-icon-hide{
+.mobile-icon-hide {
   display: none;
 }
 
-/* .certificate{
-  width: auto;
+.tech-accolade {
+  width: 50%;
 }
 
-.certificate img{
+.tech-accolade img {
   width: 100%;
   height: 350px;
-} */
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 768px) {
-
   .about-me-wrapper {
     flex-direction: column !important;
   }
@@ -47,18 +47,20 @@
     margin-bottom: 20px;
   }
 
-  .university-education{
+  .university-education {
     margin-bottom: 5px;
   }
 
-  .university, .secondary, .primary{
+  .university,
+  .secondary,
+  .primary {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
   }
 
-  .my-education h2{
+  .my-education h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -66,29 +68,28 @@
     font-size: x-large;
   }
 
-  .mobile-icon-hide{
+  .mobile-icon-hide {
     display: block;
   }
 
-  .about-section h1{
+  .about-section h1 {
     display: flex;
     flex-direction: column;
     font-size: x-large;
   }
 
-  .certificate{
+  .tech-accolade {
     width: 100%;
+    margin-bottom: 5px;
   }
 
-  .certificate img{
-    height: 150px;
+  .tech-accolade img {
+    height: 200px;
   }
 
-  .my-certifications h2{
+  .tech-accolades-wrapper h2 {
     display: flex;
     flex-direction: row;
     font-size: x-large;
   }
-  
 }
-
