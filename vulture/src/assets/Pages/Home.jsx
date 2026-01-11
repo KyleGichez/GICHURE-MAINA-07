@@ -328,7 +328,7 @@ const Home = () => {
             </div>
           </div>
           <div className="tech-accolades-wrapper" data-aos="fade-up">
-            <h2 className="text-2xl bold uppercase mb-[20px] mt-[30px] flex gap-[10px] items-center">
+            <h2 className="text-2xl bold uppercase mb-[10px] mt-[30px] flex gap-[10px] items-center">
               <span>
                 <Icon icon="tdesign:certificate-filled" width="24" height="24" />
               </span>
